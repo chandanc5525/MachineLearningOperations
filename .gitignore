@@ -1,80 +1,38 @@
-# -------------------------------
-# Python & Environment Files
-# -------------------------------
+# -------------------------
+# Python
+# -------------------------
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
 *.pyo
-
-# Virtual environment
+*.pyd
+*.egg-info/
+*.env
 .venv/
-venv/
 env/
-ENV/
 
-# UV lock and cache files (if using uv)
-.uv/
-.uv_lock/
-.uv-cache/
-.uv-env/
-
-# -------------------------------
-# Data & Artifacts
-# -------------------------------
-data/
+# -------------------------
+# Artifacts and models
+# -------------------------
 artifacts/
-datasets/
-checkpoints/
-models/
-model/
-runs/
-logs/
-
-# Large model or weight files
+*.pkl
+*.joblib
 *.h5
-*.hdf5
-*.ckpt
-*.pth
-*.pt
-*.onnx
-*.tflite
-saved_model/
 
-# -------------------------------
-# Jupyter Notebook
-# -------------------------------
-.ipynb_checkpoints/
-
-# -------------------------------
-# IDE and Editor Files
-# -------------------------------
+# -------------------------
+# IDE / Editor
+# -------------------------
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
 
-# -------------------------------
-# Build & Distribution
-# -------------------------------
-build/
-dist/
-*.egg-info/
-*.egg
-.eggs/
-
-# -------------------------------
-# Config & Secrets
-# -------------------------------
-config/*.yaml
-config/*.yml
-!config/sample_config.yaml   # keep a sample config
-*.env
-secrets.json
-
-# -------------------------------
-# Logs & Temporary Files
-# -------------------------------
+# -------------------------
+# Logs
+# -------------------------
 *.log
-*.tmp
-*.bak
-*.swp
+
+# -------------------------
+# OS files
+# -------------------------
+.DS_Store
+Thumbs.db

@@ -1,0 +1,14 @@
+data:
+  dataset: "california_housing"
+
+model:
+  type: "RandomForest"
+  n_estimators: 100
+  random_state: 42
+
+split:
+  test_size: 0.3
+  random_state: 42
+
+artifacts:
+  model_path: "artifacts/model/random_forest_model.pkl"

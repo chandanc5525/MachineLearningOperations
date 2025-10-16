@@ -6,29 +6,24 @@ __pycache__/
 *$py.class
 *.pyo
 
-# Virtual environment (for uv or venv)
+# Virtual environment
 .venv/
 venv/
 env/
 ENV/
 
-# UV lock and cache files
+# UV lock and cache files (if using uv)
 .uv/
 .uv_lock/
 .uv-cache/
 .uv-env/
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
 # -------------------------------
 # Data & Artifacts
 # -------------------------------
 data/
-datasets/
-raw_data/
-processed_data/
 artifacts/
+datasets/
 checkpoints/
 models/
 model/
@@ -43,13 +38,12 @@ logs/
 *.pt
 *.onnx
 *.tflite
+saved_model/
 
 # -------------------------------
-# Temporary & System Files
+# Jupyter Notebook
 # -------------------------------
-.DS_Store
-Thumbs.db
-desktop.ini
+.ipynb_checkpoints/
 
 # -------------------------------
 # IDE and Editor Files
@@ -60,7 +54,7 @@ desktop.ini
 *.sublime-workspace
 
 # -------------------------------
-# Build and Distribution Files
+# Build & Distribution
 # -------------------------------
 build/
 dist/
@@ -69,48 +63,18 @@ dist/
 .eggs/
 
 # -------------------------------
-# Configuration & Secrets
+# Config & Secrets
 # -------------------------------
 config/*.yaml
 config/*.yml
-!config/sample_config.yaml   # keep example config
-secrets.json
+!config/sample_config.yaml   # keep a sample config
 *.env
+secrets.json
 
 # -------------------------------
-# Logs & Outputs
+# Logs & Temporary Files
 # -------------------------------
 *.log
-logs/
-output/
-outputs/
-reports/
-
-# -------------------------------
-# Cache Directories
-# -------------------------------
-.cache/
-__pypackages__/
-.pytest_cache/
-.mypy_cache/
-pytestdebug.log
-
-# -------------------------------
-# TensorFlow, PyTorch & ML Framework Files
-# -------------------------------
-events.out.tfevents.*
-*.pb
-*.pbtxt
-*.ckpt-*
-*.index
-*.meta
-saved_model/
-lightning_logs/
-wandb/
-
-# -------------------------------
-# Miscellaneous
-# -------------------------------
-*.bak
 *.tmp
+*.bak
 *.swp
